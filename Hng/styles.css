@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: black;
+    color: white;
+}
+
+.container {
+    display: flex;
+    position: absolute;
+    margin: 0 180px ;
+    padding: 300px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.profile img {
+    width: 150px;
+    height: 150px;
+}

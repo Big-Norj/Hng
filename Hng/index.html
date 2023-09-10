@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Personal Data</title>
+</head>
+<body>
+    
+    <div class="container">
+       
+        <div class="profile">
+            <img src="me.png" alt="orji kingsley">
+            <div class="profile-body">
+                <h1>Orji Kingsley</h1>
+                <p>slack name</p>
+                <button><a href="https://github.com/Big-Norj/Hng">Open Github</a></button>
+            </div>
+        </div>
+        <div id="output">Monday</div>
+        <br>
+        <div id="currentTime"></div>
+    </div>
+
+    <script src="script.js"></script>
+     <script>
+        const element = document.getElementById('currentTime');
+        
+        setInterval(function () {
+          const currentDate = new Date();
+          element.innerText = currentDate.getHours() + ":" + currentDate.getMinutes() + ":" + currentDate.getSeconds();
+        }, 1000);
+      </script> 
+</body>
+</html>
